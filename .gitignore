@@ -1,5 +1,7 @@
 data/
+references/
 .nextflow/
 work/
-nextflow.log*
 logs/
+**.log*
+dev*

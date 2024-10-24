@@ -11,15 +11,13 @@ set -e
 
 date;hostname;pwd
 
-# ARGS
-proj_dir="${1:?Missing project directory}"
 
 # Load modules
-module load nextflow/23.04.1 miniconda/22.11.1-1
+module load nextflow/24.04.3 conda/latest
 
 # Run pipeline with slurm profile
 nextflow run main.nf \
     --project "$proj_dir"  \
     -profile conda
 
-date
+
